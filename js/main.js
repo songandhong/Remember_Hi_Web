@@ -120,9 +120,26 @@
       disableOn: 700,
       type: 'iframe',
       mainClass: 'mfp-fade',
+      
+      preloader: false,
+      fixedContentPos: false,
+      accelerometer : true,
+      autoplay : true,
+      gyroscope : true,
+      allowfullscreen : true,
+      frameborder : 0
+  });
+ /* 
+  RESULT POP-UP
+ ========================================================================== */
+  $('.btn').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
       fixedContentPos: false,
+      
   });
 
   /* 

@@ -9,6 +9,7 @@
   font-style: normal;
 }
 
+
 [class^="lni-"], [class*=" lni-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'LineIcons' !important;
@@ -292,7 +293,7 @@
   content: "\e958";
 }
 .lni-dashboard:before {
-  content: "\e959";
+  content: "\f022";
 }
 .lni-database:before {
   content: "\e95a";
@@ -520,7 +521,7 @@
   content: "\e9a4";
 }
 .lni-leaf:before {
-  content: "\e9a5";
+  content: "\f044";
 }
 .lni-licencse:before {
   content: "\e9a6";
@@ -944,4 +945,7 @@
 }
 .lni-zoom-out:before {
   content: "\ea32";
+}
+.lni-message:before {
+  content: "\2709";
 }

@@ -594,7 +594,7 @@ button:focus {
 }
 
 #download .download-wrapper {
-  padding: 0px 30px;
+  padding: 15px 50px;
 }
 
 #download .download-text p {
@@ -1295,7 +1295,7 @@ footer .footer-Content h2 {
   #todo-list{
     width:100%;
   
-    padding:50px;
+    padding:60px;
     background:white;
     position:relative;
     /*box-shadow*/

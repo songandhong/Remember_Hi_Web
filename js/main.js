@@ -1,7 +1,35 @@
 (function($) {
   
   "use strict";
+ 
+ /* Page Loader active
+  ========================================================*/
+  $( '.btn' ).click( function() {
+    var count = 0;
+    $('input:checkbox[name="chk"]').each(function() {
+      if(this.checked){
+        ++count;
+      }
+    });
+    if(count < 5){
+      alert('당신은 치매와 관련이 없습니다.');
+    }else if(count < 10){
+      alert('당신은 치매1단계 입니다.');
+    }else if(count < 15){
+      alert('당신은 치매2단계 입니다.');
+    }else if(count < 20){
+      alert('당신은 치매3단계 입니다');
+    }else if(count = 20){
+      alert('당신은 치매위험단계 입니다. 전문가와 상담하세요');
+    }
+    $( function() {
+      $( "#progressbar" ).progressbar({
+        value: 37
+      });
+    } );
+  } );
   
+
   /* Page Loader active
   ========================================================*/
   $('#preloader').fadeOut();
@@ -132,15 +160,6 @@
  /* 
   RESULT POP-UP
  ========================================================================== */
-  $('.btn').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-      
-  });
 
   /* 
    Back Top Link
